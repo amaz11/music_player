@@ -15,8 +15,8 @@ const Navbar = () => {
         name="Aduio List"
         component={AduioList}
         options={{
-          tabBarIcon: () => {
-            return <Ionicons name="headset" size={24} color="black" />;
+          tabBarIcon: ({ size, color }) => {
+            return <Ionicons name="headset" size={size} color={color} />;
           },
         }}
       />
@@ -24,8 +24,8 @@ const Navbar = () => {
         name="Player"
         component={Player}
         options={{
-          tabBarIcon: () => {
-            return <FontAwesome name="play" size={24} color="black" />;
+          tabBarIcon: ({ size, color }) => {
+            return <FontAwesome name="play" size={size} color={color} />;
           },
         }}
       />
@@ -33,8 +33,8 @@ const Navbar = () => {
         name="Play List"
         component={PlayList}
         options={{
-          tabBarIcon: () => {
-            return <AntDesign name="heart" size={24} color="black" />;
+          tabBarIcon: ({ size, color }) => {
+            return <AntDesign name="heart" size={size} color={color} />;
           },
         }}
       />
